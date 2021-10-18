@@ -1,0 +1,23 @@
+<div class="parent">
+    <div class="div1">
+        <img src="./images/PokeNode.png">
+
+    </div>
+    <div class="div2">
+        <h1 class="fontStyle">Bem vindo ao PokeNode</h1>
+        <form action="/searchPoke" method="POST">
+            <input class="search" id="poke" name="poke" placeholder="Digite o nome do pokémon">
+            <button class="btn-poke">Procurar</button>
+        </form>
+        {{#if search}}
+        <h2 class="fontStyle">{{poke}}</h2>
+        <img src="{{imgPoke}}" alt="poke">
+        
+        {{/if}}
+    </div>
+
+    <div class="div3">
+        <h1>Aqui fica o footer</h1>
+    </div>
+
+</div>
