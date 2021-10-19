@@ -9,15 +9,17 @@
             <input class="search" id="poke" name="poke" placeholder="Digite o nome do pokémon">
             <button class="btn-poke">Procurar</button>
         </form>
-        {{#if search}}
+        {{#if poke}}
         <h2 class="fontStyle">{{poke}}</h2>
         <img src="{{imgPoke}}" alt="poke">
-        
+        <br>
+        <img src="{{type1Url}}" alt="{{type1}}">
+        <img src="{{type2Url}}" alt="{{type2}}">
+        <h2 class="fontStyle">Número na pokédex:{{id}}</h2>
         {{/if}}
+
+<br>
     </div>
 
-    <div class="div3">
-        <h1>Aqui fica o footer</h1>
-    </div>
 
 </div>
